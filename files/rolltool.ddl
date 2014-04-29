@@ -25,6 +25,14 @@ action "roll", :description => "Copies code from Accurev VCS to a server" do
           :optional    => false,
           :maxlength   => 90
     
+    input :wsname,
+          :prompt      => "Workspace name",
+          :description => "The workspace name to use",
+          :type        => :string,
+          :validation  => ".",
+          :optional    => false,
+          :maxlength   => 90
+    
     input :stream_snap,
           :prompt      => "Stream/Snapshot",
           :description => "The backing Accurev stream or snapshot",
