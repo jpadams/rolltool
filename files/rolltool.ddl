@@ -1,10 +1,10 @@
-metadata    :name        => "roll tool",
+metadata    :name        => "rolltool",
             :description => "Copy code from Accurev VCS to a server",
             :author      => "Jeremy Adams",
             :license     => "Apache 2.0",
             :version     => "1.0.0",
             :url         => "http://www.puppetlabs.com/",
-            :timeout     => 60
+            :timeout     => 10
 
 action "roll", :description => "Copies code from Accurev VCS to a server" do
     display :always
